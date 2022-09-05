@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="com.nhpvtl_DeliveryManageWeb_war_1.0-SNAPSHOTPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>com.nhpvtl.pojo.Feedback</class>
+    <class>com.nhpvtl.pojo.Place</class>
+    <class>com.nhpvtl.pojo.City</class>
+    <class>com.nhpvtl.pojo.UserAccount</class>
+    <class>com.nhpvtl.pojo.Discount</class>
+    <class>com.nhpvtl.pojo.Orders</class>
+    <class>com.nhpvtl.pojo.Shipper</class>
+    <class>com.nhpvtl.pojo.Bank</class>
+    <class>com.nhpvtl.pojo.OrdersDetail</class>
+    <class>com.nhpvtl.pojo.Customer</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/delivery_management_db?zeroDateTimeBehavior=CONVERT_TO_NULL"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="phuc342001"/>
+    </properties>
+  </persistence-unit>
+</persistence>

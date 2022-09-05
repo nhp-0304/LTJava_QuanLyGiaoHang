@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/XML/XMLDocument.xml to edit this template
+-->
+
+
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache
+Software Foundation//DTD Tiles Configuration 3.0//EN"
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+    <definition name="baseLayout"
+                template="/WEB-INF/layout/base.jsp">
+        <put-attribute name="title" value="" />
+        <put-attribute name="header"
+                       value="/WEB-INF/layout/header.jsp" />
+        <put-attribute name="content" value="" />
+        <put-attribute name="footer"
+                       value="/WEB-INF/layout/footer.jsp" />
+    </definition>
+    <definition name="index" extends="baseLayout">
+        <put-attribute name="title" value="Trang chủ" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/index.jsp" />
+    </definition>
+    <definition name="login" extends="baseLayout">
+        <put-attribute name="title" value="Đăng nhập" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/login.jsp" />
+    </definition>
+    <definition name="register" extends="baseLayout">
+        <put-attribute name="title" value="Đăng ký" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/register.jsp" />
+    </definition>
+    <definition name="registershipper" extends="baseLayout">
+        <put-attribute name="title" value="Đăng ký shipper" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/registershipper.jsp" />
+    </definition>
+    <definition name="shippermanagebyadmin" extends="baseLayout">
+        <put-attribute name="title" value="Quản lý shipper" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/shippermanagebyadmin.jsp" />
+    </definition>
+    <definition name="manageaccount" extends="baseLayout">
+        <put-attribute name="title" value="Quản lý account" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/manageaccount.jsp" />
+    </definition>
+    <definition name="addaccount" extends="baseLayout">
+        <put-attribute name="title" value="Add useraccount" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/addaccount.jsp" />
+    </definition> 
+    <definition name="ordership" extends="baseLayout">
+        <put-attribute name="title" value="Đơn hàng" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/ordership.jsp" />
+    </definition>
+    <definition name="ordershipdetail" extends="baseLayout">
+        <put-attribute name="title" value="Chi tiết đơn hàng" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/ordershipdetail.jsp" />
+    </definition>
+    <definition name="discountmanagebyadmin" extends="baseLayout">
+        <put-attribute name="title" value="Quản lý danh sách discount" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/discountmanagebyadmin.jsp" />
+    </definition>
+    <definition name="shipperlist" extends="baseLayout">
+        <put-attribute name="title" value="Danh sách shipper" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/shipperlist.jsp" />
+    </definition>
+    <definition name="shipperdetail" extends="baseLayout">
+        <put-attribute name="title" value="Chi tiết shipper" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/shipperdetail.jsp" />
+    </definition>
+    <definition name="stats" extends="baseLayout">
+        <put-attribute name="title" value="Thống kê số lượng đơn hàng của shipper" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/stats.jsp" />
+    </definition>
+    <definition name="revenuestats" extends="baseLayout">
+        <put-attribute name="title" value="Thống kê doanh thu của shipper" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/revenuestats.jsp" />
+    </definition>
+    <definition name="frequencystats" extends="baseLayout">
+        <put-attribute name="title" value="Tần suất giao hàng của shipper" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/frequencystats.jsp" />
+    </definition> 
+    <definition name="shipperbycustomer" extends="baseLayout">
+        <put-attribute name="title" value="Đánh giá shipper" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/shipperbycustomer.jsp" />
+    </definition> 
+    <definition name="shipperfeedbackbycustomer" extends="baseLayout">
+        <put-attribute name="title" value="Đánh giá shipper" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/shipperfeedbackbycustomer.jsp" />
+    </definition> 
+    <definition name="infocustomer" extends="baseLayout">
+        <put-attribute name="title" value="Thông tin customer" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/infocustomer.jsp" />
+    </definition> 
+    <definition name="infoshipper" extends="baseLayout">
+        <put-attribute name="title" value="Thông tin shipper" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/infoshipper.jsp" />
+    </definition> 
+    <definition name="makeorder" extends="baseLayout">
+        <put-attribute name="title" value="Đặt đơn" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/makeorder.jsp" />
+    </definition> 
+    <definition name="takeorder" extends="baseLayout">
+        <put-attribute name="title" value="Nhận đơn" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/takeorder.jsp" />
+    </definition> 
+</tiles-definitions>
+
